@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kleine Küstenwunder – Havaneser Hobbyzucht in Heiligenhafen an der Ostsee. Liebevolle & familiäre Aufzucht." />
+  <title>Kleine Küstenwunder | Havaneser Hobbyzucht</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <img src="images/logo.png" alt="Kleine Küstenwunder" class="preloader-logo" />
+      <div class="preloader-wave"></div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="header">
+    <nav class="nav">
+      <a href="#home" class="nav-brand">
+        <img src="images/logo.png" alt="Kleine Küstenwunder" class="nav-logo" />
+        <span class="nav-brand-text">Kleine Küstenwunder</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menü" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-panel" id="navPanel">
+        <ul class="nav-links">
+          <li><a href="#about" data-i18n="nav.about">Über uns</a></li>
+          <li><a href="#dogs" data-i18n="nav.dogs">Happy & Hope</a></li>
+          <li><a href="#breeding" data-i18n="nav.breeding">Aufzucht</a></li>
+          <li><a href="#gallery" data-i18n="nav.gallery">Galerie</a></li>
+          <li><a href="#contact" data-i18n="nav.contact">Kontakt</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" class="lang-btn is-active" data-lang="de">DE</button>
+          <button type="button" class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-media">
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="images/dog-beach.png"
+        >
+          <source src="hero-video.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <img src="images/logo.png" alt="" class="hero-logo" aria-hidden="true" />
+        <h1 class="hero-title">Kleine Küstenwunder</h1>
+        <p class="hero-tagline" data-i18n="hero.tagline">Kleine Pfoten, großes Glück</p>
+        <p class="hero-sub" data-i18n="hero.sub">Havaneser Hobbyzucht · Heiligenhafen / Ostsee</p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" data-i18n="hero.cta">Kontakt aufnehmen</a>
+          <a href="#gallery" class="btn btn-ghost" data-i18n="hero.cta2">Unsere Welpen</a>
+        </div>
+      </div>
+      <a href="#about" class="hero-scroll" aria-label="Scroll">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-media reveal">
+          <img src="images/melanie-dogs.png" alt="Melanie Busch mit Happy und Hope" />
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">Über uns</p>
+          <h2 data-i18n="about.title">Mit Herz an der Ostsee</h2>
+          <p data-i18n="about.p1">
+            Ich bin Melanie Busch – und hinter Kleine Küstenwunder steckt meine Leidenschaft für Havaneser.
+            Gemeinsam mit Happy und Hope lebe ich in Heiligenhafen an der Ostsee.
+          </p>
+          <p data-i18n="about.p2">
+            Unsere Welpen wachsen mitten in der Familie auf: mit Nähe, Geduld und viel Liebe –
+            damit sie als selbstbewusste, menschenbezogene Begleiter in ihr neues Zuhause starten.
+          </p>
+          <ul class="about-points">
+            <li data-i18n="about.point1">Hobbyzucht mit persönlicher Betreuung</li>
+            <li data-i18n="about.point2">Familiäre Aufzucht zu Hause</li>
+            <li data-i18n="about.point3">Standort Heiligenhafen / Ostsee</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dogs -->
+    <section class="section dogs" id="dogs">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow" data-i18n="dogs.eyebrow">Unsere Hunde</p>
+          <h2 data-i18n="dogs.title">Happy & Hope</h2>
+          <p class="section-lead" data-i18n="dogs.lead">
+            Zwei Havaneser mit Charakter – verspielt, treu und das Herz unserer kleinen Zucht.
+          </p>
+        </div>
+        <div class="dogs-pair">
+          <article class="dog-feature reveal">
+            <div class="dog-feature-img">
+              <img src="images/dog-beach.png" alt="Happy am Strand" />
+            </div>
+            <div class="dog-feature-text">
+              <h3>Happy</h3>
+              <p data-i18n="dogs.happy">
+                Sonnig, neugierig und immer bereit für Abenteuer am Meer –
+                Happy bringt Lebensfreude in jeden Tag.
+              </p>
+            </div>
+          </article>
+          <article class="dog-feature dog-feature--alt reveal">
+            <div class="dog-feature-img">
+              <img src="images/puppy-bow.png" alt="Hope" />
+            </div>
+            <div class="dog-feature-text">
+              <h3>Hope</h3>
+              <p data-i18n="dogs.hope">
+                Sanft, aufmerksam und voller Charme –
+                Hope ist der ruhige Anker und ein echter Seelentröster.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Breeding philosophy -->
+    <section class="section breeding" id="breeding">
+      <div class="breeding-bg" aria-hidden="true"></div>
+      <div class="container breeding-inner">
+        <div class="breeding-copy reveal">
+          <p class="eyebrow eyebrow--light" data-i18n="breeding.eyebrow">Unsere Philosophie</p>
+          <h2 data-i18n="breeding.title">Liebevolle & familiäre Aufzucht</h2>
+          <p data-i18n="breeding.p1">
+            Bei uns gibt es keine Zwingerhaltung. Welpen wachsen im Haushalt auf,
+            lernen Alltaggeräusche, bekommen frühe Sozialisierung und viel Körperkontakt.
+          </p>
+          <p data-i18n="breeding.p2">
+            Gesundheit, Charakter und ein behutsamer Start ins Leben stehen im Mittelpunkt –
+            für Familien, die einen treuen Havaneser-Begleiter suchen.
+          </p>
+        </div>
+        <div class="breeding-visual reveal">
+          <img src="images/with-puppy.png" alt="Liebevolle Betreuung eines Welpen" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-intro reveal">
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Einblicke</p>
+          <h2 data-i18n="gallery.title">Galerie</h2>
+          <p class="section-lead" data-i18n="gallery.lead">
+            Momente aus dem Alltag unserer Küstenwunder.
+          </p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="gallery-item gallery-item--wide reveal">
+            <img src="images/dog-beach.png" alt="Havaneser am Strand" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/puppy-bow.png" alt="Welpe mit Schleife" loading="lazy" />
+          </figure>
+          <figure class="gallery-item reveal">
+            <img src="images/puppy-tunnel.png" alt="Welpe im Spieltunnel" loading="lazy" />
+          </figure>
+          <figure class="gallery-item gallery-item--tall reveal">
+            <img src="images/melanie-dogs.png" alt="Melanie mit Happy und Hope" loading="lazy" />
+          </figure>
+          <figure class="gallery-item gallery-item--wide reveal">
+            <img src="images/with-puppy.png" alt="Welpe auf dem Arm" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Kontakt</p>
+          <h2 data-i18n="contact.title">Schreiben Sie uns</h2>
+          <p data-i18n="contact.lead">
+            Interesse an einem Welpen oder Fragen zur Aufzucht?
+            Melden Sie sich gerne – wir freuen uns auf Ihre Nachricht.
+          </p>
+          <div class="contact-details">
+            <div class="contact-row">
+              <span class="contact-label" data-i18n="contact.owner">Züchterin</span>
+              <span>Melanie Busch</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label" data-i18n="contact.place">Standort</span>
+              <span>Heiligenhafen / Ostsee</span>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">Instagram</span>
+              <a href="https://www.instagram.com/kleine.kuestenwunder/" target="_blank" rel="noopener noreferrer">@kleine.kuestenwunder</a>
+            </div>
+            <div class="contact-row">
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/491701234567" target="_blank" rel="noopener noreferrer" data-i18n="contact.whatsapp">Nachricht per WhatsApp</a>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a class="social-btn social-btn--ig" href="https://www.instagram.com/kleine.kuestenwunder/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.5 1 .4.4.7.9 1 1.5.2.4.4 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-1 1.5-.4.4-.9.7-1.5 1-.4.2-1.1.4-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.5-1-.4-.4-.7-.9-1-1.5-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.5-1 1-1.5.4-.4.9-.7 1.5-1 .4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.2 0-3.5 0-4.8.1-1 .1-1.6.2-1.9.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.3-.3.9-.3 1.9-.1 1.2-.1 1.6-.1 4.8s0 3.5.1 4.8c.1 1 .2 1.6.3 1.9.2.5.4.8.7 1.1.3.3.6.5 1.1.7.3.1.9.3 1.9.3 1.2.1 1.6.1 4.8.1s3.5 0 4.8-.1c1-.1 1.6-.2 1.9-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.3.3-.9.3-1.9.1-1.2.1-1.6.1-4.8s0-3.5-.1-4.8c-.1-1-.2-1.6-.3-1.9-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.3-.1-.9-.3-1.9-.3-1.3-.1-1.6-.1-4.8-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm5.1-8.4a1.2 1.2 0 1 1 0-2.3 1.2 1.2 0 0 1 0 2.3z"/></svg>
+              <span>Instagram</span>
+            </a>
+            <a class="social-btn social-btn--wa" href="https://wa.me/491701234567" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.8 3 .6.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3zM12.1 21.8h0a9.7 9.7 0 0 1-4.9-1.3l-.4-.2-3.7 1 1-3.6-.2-.4a9.7 9.7 0 0 1-1.5-5.2 9.8 9.8 0 0 1 9.8-9.7 9.7 9.7 0 0 1 6.9 2.9 9.7 9.7 0 0 1 2.9 6.9 9.8 9.8 0 0 1-9.9 9.6zm8.3-18A11.6 11.6 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.1-1.6A12 12 0 0 0 12.1 24C18.7 24 24 18.6 24 12a11.9 11.9 0 0 0-3.6-8.2z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-field">
+            <label for="name" data-i18n="form.name">Name</label>
+            <input type="text" id="name" name="name" required autocomplete="name" />
+          </div>
+          <div class="form-field">
+            <label for="email" data-i18n="form.email">E-Mail</label>
+            <input type="email" id="email" name="email" required autocomplete="email" />
+          </div>
+          <div class="form-field">
+            <label for="message" data-i18n="form.message">Nachricht</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit">Nachricht senden</button>
+          <p class="form-note" data-i18n="form.note">Öffnet Ihre E-Mail-App mit der Nachricht.</p>
+          <p class="form-success" id="formSuccess" hidden data-i18n="form.success">Vielen Dank – Ihre Nachricht ist bereit zum Senden.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Kleine Küstenwunder" />
+        <div>
+          <strong>Kleine Küstenwunder</strong>
+          <p data-i18n="footer.tag">Havaneser Hobbyzucht · Heiligenhafen</p>
+        </div>
+      </div>
+      <div class="footer-social">
+        <p class="footer-social-label" data-i18n="footer.follow">Folgt uns</p>
+        <a class="footer-ig" href="https://www.instagram.com/kleine.kuestenwunder/" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.9.2 2.3.4.6.2 1 .5 1.5 1 .4.4.7.9 1 1.5.2.4.4 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.9-.4 2.3-.2.6-.5 1-1 1.5-.4.4-.9.7-1.5 1-.4.2-1.1.4-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.9-.2-2.3-.4-.6-.2-1-.5-1.5-1-.4-.4-.7-.9-1-1.5-.2-.4-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.9.4-2.3.2-.6.5-1 1-1.5.4-.4.9-.7 1.5-1 .4-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2zm0 1.8c-3.2 0-3.5 0-4.8.1-1 .1-1.6.2-1.9.3-.5.2-.8.4-1.1.7-.3.3-.5.6-.7 1.1-.1.3-.3.9-.3 1.9-.1 1.2-.1 1.6-.1 4.8s0 3.5.1 4.8c.1 1 .2 1.6.3 1.9.2.5.4.8.7 1.1.3.3.6.5 1.1.7.3.1.9.3 1.9.3 1.2.1 1.6.1 4.8.1s3.5 0 4.8-.1c1-.1 1.6-.2 1.9-.3.5-.2.8-.4 1.1-.7.3-.3.5-.6.7-1.1.1-.3.3-.9.3-1.9.1-1.2.1-1.6.1-4.8s0-3.5-.1-4.8c-.1-1-.2-1.6-.3-1.9-.2-.5-.4-.8-.7-1.1-.3-.3-.6-.5-1.1-.7-.3-.1-.9-.3-1.9-.3-1.3-.1-1.6-.1-4.8-.1zm0 3.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8zm0 8.1a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4zm5.1-8.4a1.2 1.2 0 1 1 0-2.3 1.2 1.2 0 0 1 0 2.3z"/></svg>
+          <span>@kleine.kuestenwunder</span>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Kleine Küstenwunder · Melanie Busch</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/491701234567"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.6-.8-1.9-.9-.3-.1-.4-.1-.6.1-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.4.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5 0-.1-.6-1.5-.8-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.3.3-.9.9-.9 2.1s.9 2.5 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.8 3 .6.5-.1 1.6-.6 1.8-1.3.2-.6.2-1.2.1-1.3-.1-.1-.3-.2-.6-.3zM12.1 21.8h0a9.7 9.7 0 0 1-4.9-1.3l-.4-.2-3.7 1 1-3.6-.2-.4a9.7 9.7 0 0 1-1.5-5.2 9.8 9.8 0 0 1 9.8-9.7 9.7 9.7 0 0 1 6.9 2.9 9.7 9.7 0 0 1 2.9 6.9 9.8 9.8 0 0 1-9.9 9.6zm8.3-18A11.6 11.6 0 0 0 12 0C5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.1-1.6A12 12 0 0 0 12.1 24C18.7 24 24 18.6 24 12a11.9 11.9 0 0 0-3.6-8.2z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
