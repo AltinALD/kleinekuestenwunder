@@ -419,13 +419,16 @@ h3 {
 .girl-card img { width: 100%; height: 420px; object-fit: cover; }
 .dog-slides {
   position: relative;
-  height: 420px;
+  height: 640px;
   overflow: hidden;
 }
 .dog-slides img {
   position: absolute;
   inset: 0;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
   opacity: 0;
   transition: opacity 0.8s ease;
 }
