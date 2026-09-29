@@ -199,21 +199,37 @@
     });
   }
 
+  const backdrop = document.createElement("div");
+  backdrop.className = "nav-backdrop";
+  document.body.appendChild(backdrop);
+
   function closeNav() {
     navToggle?.classList.remove("is-open");
     navPanel?.classList.remove("is-open");
     navToggle?.setAttribute("aria-expanded", "false");
+    document.body.classList.remove("nav-open");
     if (preloader?.classList.contains("is-done") || !preloader) {
       document.body.style.overflow = "";
     }
   }
 
+  function openNav() {
+    navToggle?.classList.add("is-open");
+    navPanel?.classList.add("is-open");
+    navToggle?.setAttribute("aria-expanded", "true");
+    document.body.classList.add("nav-open");
+    document.body.style.overflow = "hidden";
+  }
+
   function initNav() {
     navToggle?.addEventListener("click", () => {
-      const open = navPanel.classList.toggle("is-open");
-      navToggle.classList.toggle("is-open", open);
-      navToggle.setAttribute("aria-expanded", String(open));
-      document.body.style.overflow = open ? "hidden" : "";
+      if (navPanel?.classList.contains("is-open")) closeNav();
+      else openNav();
+    });
+
+    backdrop.addEventListener("click", closeNav);
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closeNav();
     });
 
     navPanel?.querySelectorAll("a").forEach((link) => {
